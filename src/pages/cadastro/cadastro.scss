@@ -1,0 +1,20 @@
+page-cadastro {
+  ion-buttons button[icon-only].my-style-for-modal {
+    margin: 0 6px;
+    min-width: 36px;
+  }
+  .p {
+    margin-left: 30%;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 600;
+  }
+
+  .conteiner {
+    background-color: rgba(46, 25, 1, 0.767);
+  }
+  .card_conteiner {
+    height: 90%;
+    margin-top: 10%;
+  }
+}

@@ -1,0 +1,78 @@
+page-contact {
+  //-------------- imagem user ------------------------
+  .circle {
+    background-color: #aaa;
+    border-radius: 50%;
+    border: 1px solid color($colors, azulBebe);
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+    margin: 0;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 10px 10px  color($colors, azulBebe);
+  }
+
+  .circle img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  //----------- imagem banner ------------------
+
+  img_banner {
+    height: auto;
+  }
+  .drop-shadow {
+    position: relative;
+    filter: blur(1px);
+    float: left;
+    max-width: 100% !important;
+    height: auto;
+  }
+  .drop-shadow:before,
+  .drop-shadow:after {
+    content: "";
+    position: absolute;
+    z-index: -2;
+  }
+
+  /* Lifted corners */
+  .lifted:before,
+  .lifted:after {
+    bottom: 15px;
+    width: 50%;
+    height: 5%;
+    max-width: 300px;
+    -webkit-box-shadow: 0 15px 10px  color($colors, azulBebe);
+    -moz-box-shadow: 0 15px 10px color($colors, azulBebe);
+    box-shadow: 0 15px 10px color($colors, azulBebe);
+  }
+  .lifted:before {
+    left: 5px;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+  }
+  .lifted:after {
+    right: 5px;
+    left: auto;
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    transform: rotate(3deg);
+  }
+
+  .container{
+      background:  color($colors, azulBebe);
+      height: 400%;
+  }
+
+}

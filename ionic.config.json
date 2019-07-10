@@ -1,0 +1,7 @@
+{
+  "name": "agendaBarber",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

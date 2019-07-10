@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Meu Perfil
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content *ngIf="user">
+  <div class="drop-shadow lifted">
+    <img class="img_banner" src="{{user.banner}}">
+  </div>
+
+  <div class="circle ">
+    <img src="{{user.img}}" />
+  </div>
+
+  <div padding>
+    <ion-card style="padding-top: 15%;">
+      <ion-card-header style="font-size: 18px">
+        <b>{{user.nome_user}}</b>
+      </ion-card-header>
+      <ion-list *ngFor="let l of items">
+        <button ion-item>
+          <ion-icon name="{{l.icon}}" item-start></ion-icon>
+          {{l.item}}
+        </button>
+      </ion-list>
+    </ion-card>
+  </div>
+
+
+</ion-content>

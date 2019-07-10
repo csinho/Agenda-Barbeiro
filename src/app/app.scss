@@ -1,0 +1,46 @@
+// http://ionicframework.com/docs/theming/
+
+.md,
+.wp {
+  .back-button {
+    color: rgb(252, 252, 252) !important;
+    size: 10px;
+    font-weight: 400;
+  }
+}
+
+.tabbar {
+  a.tab-button[aria-selected="true"]:nth-of-type(1) {
+    color: color($colors, laranja);
+
+    .tab-button-icon {
+      color: color($colors, laranja);
+    }
+  }
+  a.tab-button[aria-selected="true"]:nth-of-type(2) {
+    color: color($colors, danger);
+    .tab-button-icon {
+      color: color($colors, danger);
+    }
+  }
+  a.tab-button[aria-selected="true"]:nth-of-type(3) {
+    color: color($colors, primary);
+    .tab-button-icon {
+      color: color($colors, primary);
+    }
+  }
+}
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
